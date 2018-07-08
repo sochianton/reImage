@@ -1,6 +1,8 @@
 # reImage
 javaScript little class to resize Images on client side in file input and send to server Form with new Images
 
+Для работы необходима поддержка jQuery библиотеки
+
 Небольшой js класс, который позволяет загружать изображения через file Input, изменять размер изображения, и затем отправляет новые изображения в составе формы на сервер.
 
 Это необходимо для клиентов с плохим интернетом. Использовать очень легко:
