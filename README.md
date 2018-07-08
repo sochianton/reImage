@@ -5,8 +5,7 @@ javaScript little class to resize Images on client side in file input and send t
 
 Это необходимо для клиентов с плохим интернетом. Использовать очень легко:
 
-Html:
-
+```html
 <form enctype="multipart/form-data" id="additem-form" action="/someUrl" method="post">
 
 <input id="Client_name" type="text" name="Client[name]">
@@ -21,10 +20,9 @@ Html:
 
 </form>
 
-
-JS:
-reImage.bind($('#Client_images'), 'images');
-
-
+<script>
+  reImage.bind($('#Client_images'), 'images');
+</script>
+```
 
 Вот и все
