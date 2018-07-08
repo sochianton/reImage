@@ -59,22 +59,6 @@ var reImage = {
             };
 
             xhr.send (formData);
-
-            // var list = $(fileInput)[0].files;
-            //
-            // api.images.forEach(function(item, i, arr) {
-            //
-            //     list[list.length] = new File([item.data], item.name);
-            //
-            //     //formData.set(inputName+'['+i+']', api.base64toBlob(item.data, item.type), item.name);
-            // });
-            //
-            //
-            // $(form).unbind('submit').submit();
-            //
-            //
-
-
         });
     },
 
@@ -223,9 +207,6 @@ var reImage = {
             cvs.width = w;
             cvs.height = h;
         }
-
-        // cvs.width = source_img_obj.naturalWidth;
-        // cvs.height = source_img_obj.naturalHeight;
 
         var ctx = cvs.getContext("2d").drawImage(source_img_obj, 0, 0, cvs.width, cvs.height);
         var newImageData = cvs.toDataURL(mime_type, quality);
