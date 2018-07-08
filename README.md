@@ -10,15 +10,15 @@ javaScript little class to resize Images on client side in file input and send t
 ```html
 <form enctype="multipart/form-data" id="additem-form" action="/someUrl" method="post">
 
-<input id="Client_name" type="text" name="Client[name]">
+  <input id="Client_name" type="text" name="Client[name]">
 
-<select name="Client[status]" id="Client_status">
-  <option value="Завершена">Завершена</option>
-  <option value="Требует согласования с координатором">Требует согласования с координатором</option>
-  <option value="Arrived At Location">Прибыл в торговую точку</option>
-</select>
+  <select name="Client[status]" id="Client_status">
+    <option value="Завершена">Завершена</option>
+    <option value="Требует согласования с координатором">Требует согласования с координатором</option>
+    <option value="Arrived At Location">Прибыл в торговую точку</option>
+  </select>
 
-<input id="Client_images" accept="image/*" multiple="multiple" type="file" name="images[]">
+  <input id="Client_images" accept="image/*" multiple="multiple" type="file" name="images[]">
 
 </form>
 
